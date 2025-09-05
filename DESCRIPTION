@@ -1,12 +1,72 @@
 Package: SingleCellGeneExplore
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Comprehensive Tools for Single-Cell RNA-seq Analysis
+Version: 1.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person(given = "Sri Harsha",
+           family = "Meghadri",
+           role = c("aut", "cre"),
+           email = "harshameghadri@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Author: Sri Harsha Meghadri [aut, cre]
+Maintainer: Sri Harsha Meghadri <harshameghadri@gmail.com>
+Description: A comprehensive collection of helper functions for single-cell RNA 
+    sequencing analysis. This package provides tools for data processing, 
+    differential expression analysis, pathway enrichment analysis, and advanced 
+    visualization of single-cell sequencing data. Includes utilities for working 
+    with Seurat objects, pseudobulk analysis, cell cycle analysis, and generating 
+    publication-ready plots including volcano plots, heatmaps, and violin plots.
+License: MIT + file LICENSE
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Depends:
+    R (>= 4.1.0)
+Imports: 
+    progress,
+    stats,
+    methods,
+    utils,
+    grDevices,
+    dplyr (>= 1.0.0),
+    tidyr,
+    rlang,
+    Seurat (>= 4.0.0),
+    SeuratObject,
+    Matrix,
+    ggplot2 (>= 3.3.0),
+    patchwork,
+    scales,
+    viridis,
+    broom,
+    modelr,
+    parallel,
+    rstatix,
+    epitools,
+    ComplexHeatmap,
+    circlize,
+    tibble,
+    stringr,
+    purrr,
+    ggrepel,
+    RColorBrewer,
+    gridExtra,
+    EnhancedVolcano,
+    KEGGREST,
+    clusterProfiler,
+    cowplot,
+    enrichR,
+    enrichplot,
+    future,
+    future.apply,
+    org.Hs.eg.db,
+    pathview
+Suggests: 
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    openxlsx
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+URL: https://github.com/harshameghadri/SingleCellGeneExplore
+BugReports: https://github.com/harshameghadri/SingleCellGeneExplore/issues
